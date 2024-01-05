@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -81,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                             int numberOfDice = (selectedRadioButtonId == R.id.radioButton1) ? 1 : 2;
 
                             if (numberOfDice == 1) {
-                                die1.setImageResource(diceImages[dice1Value - 1]);
                                 die2.setVisibility(View.INVISIBLE);
                                 sum = dice1Value; // Сумма равна значению одного кубика
                             } else {
